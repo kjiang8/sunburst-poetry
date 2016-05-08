@@ -1,0 +1,67 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+
+
+.page-wrap{
+    background: rgba(255,255,255,.9);
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    float: left;
+}
+.wrapper{
+    height: 100%;
+    float: left;
+    background: #2E0854;
+    width: 190px;
+    color: white;
+}
+.wrapper > .menu{
+    padding: 10px;
+    padding: 10px;
+}
+.wrapper > .menu > h3{
+    margin: .5em .2em;
+}
+
+.wrapper > .menu > a{
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    margin: 5px;
+    font-size: 9pt;
+}
+.wrapper > .menu > a > i{
+    font-size: 10pt;
+    margin-right: 5px;
+    background: red;
+    padding: 5px;
+    width: 13px;
+}
+
+
+.menu > a:hover{
+    background: white;
+}
+.menu > a:hover span{
+    color: black;
+}
+
+.menu > a:nth-child(2) i{
+    background: #FFFF00;
+}
+.menu > a:nth-child(3) i{
+    background: #FFA500;
+}
+.menu > a:nth-child(4) i{
+    background: #E50000;
+}
+.menu > a:nth-child(5) i{
+    background: #FF69B4;
+}
+
+
+
+
+
