@@ -17,6 +17,9 @@ $('a').click(function(){
   poemName = $(this).attr('value');
   var path = 'ordered/'+poemName + '.csv';
 
+  $('a').removeClass('current');
+  $(this).addClass('current');
+
   switch (poemName){
     case 'tyger':
       colors = tyger;
