@@ -40,11 +40,16 @@
     width: 13px;
 }
 
-
 .menu > a:hover{
-    background: white;
+    background: #ffffff;
 }
 .menu > a:hover span{
+    color: black;
+}
+.menu > a.current{
+	background: #ffffff;
+}
+.menu > a.current span{
     color: black;
 }
 
