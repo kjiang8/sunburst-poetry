@@ -54,17 +54,24 @@
 }
 
 .menu > a:nth-child(2) i{
-    background: #FFFF00;
+    background: #c1ac6d;
 }
 .menu > a:nth-child(3) i{
-    background: #FFA500;
+    background: #FFFF00;
 }
 .menu > a:nth-child(4) i{
-    background: #E50000;
+    background: #FFA500;
 }
 .menu > a:nth-child(5) i{
-    background: #FF69B4;
+    background: #E50000;
 }
+.menu > a:nth-child(6) i{
+    background: #fb37d6;
+}
+.menu > a:nth-child(7) i{
+    background: #2657a6;
+}
+
 
 
 

@@ -1,5 +1,6 @@
 import string
 from itertools import groupby
+from random import randint
 
 # cd /Volumes && ls
 
@@ -125,6 +126,51 @@ def colors(filename):
 
 	f.write('};\n\n\n')
 	f.close()
+
+def randcolors(filename):
+
+	lines = parse(filename)
+
+	words = []
+
+	for c in lines:
+		c = "".join(x for x in c if x not in string.punctuation)
+		c = c.strip(" ")
+		words.extend(c.split(" ")) #array of words
+
+	words = list(set(words)) #removes duplicates
+	
+	#commonwords = ["i'm",'with','you','in','rockland']
+
+	hexcolors = []
+
+	numcolors = raw_input('# of colors: ')
+
+	for i in range(int(numcolors)):
+		hexcolors.append('#' + raw_input(str(i) + '#'))
+
+	print hexcolors
+
+	f = open('colors.csv','a')
+	f.write('var colors = { //'+ filename + '\n')
+	'''
+	for i in range(len(commonwords)):
+		try:
+			words.remove(commonwords[i])
+		except ValueError:
+			pass		
+		f.write('"'+commonwords[i]+'": "'+hexcolors[i]+'",\n')
+	'''
+	
+	for i in range(len(words)):
+		x = randint(0,4)
+		f.write('"'+words[i]+'": "'+hexcolors[x]+'",\n')
+
+
+	f.write('};\n\n\n')
+	f.close()
+
+	print 'success'
 
 
 
