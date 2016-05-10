@@ -30,6 +30,15 @@ $('a').click(function(){
     case 'wheelbarrow':
       colors = wheelbarrow;
       break;
+    case 'howl':
+      colors = howl;
+      break;
+    case 'prufrock':
+      colors = prufrock;
+      break;
+    case 'gentle':
+      colors = gentle;
+      break;
     default:
       colors = {};
   };
